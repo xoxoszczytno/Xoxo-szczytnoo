@@ -1,25 +1,73 @@
-
 <!DOCTYPE html>
 <html lang="pl">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Rezerwacja - XOXO Bar</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>XOXO Szczytno – Klub i Pub</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Montserrat', sans-serif; background-color: #0d0d0d; color: #fff; }
+    header { background: linear-gradient(135deg, #ff007f, #ff00ff); padding: 40px 20px; text-align: center; }
+    header h1 { font-family: 'Orbitron', sans-serif; font-size: 3rem; color: #fff; text-shadow: 0 0 10px #ff00ff; }
+    nav { background: #1a1a1a; padding: 15px; text-align: center; }
+    nav a { color: #ff00cc; margin: 0 20px; font-weight: bold; text-decoration: none; }
+    section { padding: 50px 20px; max-width: 1000px; margin: auto; }
+    .gallery img { width: 100%; max-width: 300px; margin: 10px; border-radius: 12px; box-shadow: 0 0 15px #ff00cc55; }
+    form input, form textarea { width: 100%; padding: 12px; margin: 10px 0; border-radius: 6px; border: none; }
+    form button { background: #ff00cc; color: #fff; border: none; padding: 12px 25px; border-radius: 6px; cursor: pointer; }
+    .footer { background: #111; padding: 20px; text-align: center; font-size: 0.9rem; }
+  </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Zarezerwuj stolik</h1>
-    <form action="rezerwacja.php" method="POST">
-      <input type="text" name="name" placeholder="Imię i nazwisko" required />
-      <input type="tel" name="phone" placeholder="Numer telefonu" required />
-      <input type="email" name="email" placeholder="Adres e-mail" required />
-      <input type="date" name="date" required />
-      <input type="time" name="time" required />
-      <input type="number" name="people" placeholder="Liczba osób" required />
-      <textarea name="message" placeholder="Wiadomość (opcjonalnie)"></textarea>
-      <button type="submit">Zarezerwuj</button>
-    </form>
-  </div>
+
+<header>
+  <h1>CLUB XOXO SZCZYTNO</h1>
+</header>
+
+<nav>
+  <a href="#about">O nas</a>
+  <a href="#gallery">Galeria</a>
+  <a href="#contact">Kontakt</a>
+  <a href="#reservations">Rezerwacje</a>
+</nav>
+
+<section id="about">
+  <h2>O klubie</h2>
+  <p>XOXO Szczytno – nowoczesny pub i klub muzyczny zlokalizowany przy ul. Odrodzenia 40, z wejściem od strony jeziora. Czwartki do niedzieli od 22:00 do rana – z najlepszą muzyką i atmosferą w mieście.</p>
+</section>
+
+<section id="gallery" class="gallery">
+  <h2>Galeria</h2>
+  <img src="https://scontent-waw1-1.xx.fbcdn.net/v/t39.30808-6/437998065_122377446622514298_3073377488458376687_n.jpg" alt="XOXO Party 1">
+  <img src="https://scontent-waw1-1.xx.fbcdn.net/v/t39.30808-6/437981930_122377446582514298_5414998747630718432_n.jpg" alt="XOXO Party 2">
+  <img src="https://scontent-waw1-1.xx.fbcdn.net/v/t39.30808-6/437954417_122377446666514298_1069267583175814184_n.jpg" alt="XOXO Club">
+</section>
+
+<section id="contact">
+  <h2>Kontakt</h2>
+  <p><strong>Adres:</strong> ul. Odrodzenia 40, 12-100 Szczytno</p>
+  <p><strong>Telefon:</strong> <a href="tel:+48882517611" style="color:#ff00cc;">+48 882 517 611</a></p>
+  <p><strong>Email:</strong> urbanowskikonrad99@wp.pl</p>
+  <iframe src="https://maps.google.com/maps?q=Club%20XOXO%20Szczytno&t=&z=15&ie=UTF8&iwloc=&output=embed" width="100%" height="300" style="border:0;"></iframe>
+</section>
+
+<section id="reservations">
+  <h2>Rezerwacje</h2>
+  <form action="https://formsubmit.co/urbanowskikonrad99@wp.pl" method="POST">
+    <input type="text" name="name" placeholder="Imię i nazwisko" required>
+    <input type="date" name="date" required>
+    <input type="time" name="time" required>
+    <input type="number" name="people" placeholder="Liczba osób" required>
+    <input type="tel" name="phone" placeholder="Numer telefonu" required>
+    <textarea name="message" placeholder="Dodatkowe informacje (opcjonalne)"></textarea>
+    <button type="submit">Wyślij rezerwację</button>
+  </form>
+</section>
+
+<div class="footer">
+  <p>&copy; 2025 Club XOXO Szczytno | Znajdź nas na <a href="https://www.facebook.com/share/1FKyamdQri/" style="color:#ff00cc;">Facebook</a></p>
+</div>
+
 </body>
 </html>
