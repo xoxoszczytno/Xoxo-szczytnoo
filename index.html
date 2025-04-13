@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Club XOXO Szczytno</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Montserrat', sans-serif; background: #0e0e0e; color: #fff; }
+    header { background: #ff007f; padding: 20px; text-align: center; }
+    header h1 { font-size: 2.5rem; }
+    nav { background: #1e1e1e; padding: 10px; text-align: center; }
+    nav a { color: #fff; margin: 0 15px; text-decoration: none; font-weight: bold; }
+    section { padding: 40px 20px; max-width: 1000px; margin: auto; }
+    .events, .gallery, .contact, .reservations { background: #1e1e1e; margin-top: 20px; border-radius: 10px; padding: 20px; }
+    footer { background: #111; padding: 20px; text-align: center; font-size: 0.9rem; }
+    input, textarea { width: 100%; padding: 10px; margin-top: 10px; border: none; border-radius: 5px; }
+    button { padding: 10px 20px; background: #ff007f; color: white; border: none; border-radius: 5px; margin-top: 10px; cursor: pointer; }
+    .gallery img { width: 100%; max-width: 300px; margin: 10px; border-radius: 10px; }
+    @media (min-width: 768px) {
+      .gallery img { display: inline-block; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Club XOXO Szczytno</h1>
+</header>
+
+<nav>
+  <a href="#about">O Klubie</a>
+  <a href="#events">Wydarzenia</a>
+  <a href="#gallery">Galeria</a>
+  <a href="#contact">Kontakt</a>
+  <a href="#reservations">Rezerwacje</a>
+</nav>
+
+<section id="about">
+  <h2>O Klubie</h2>
+  <p>Club XOXO to pub i dyskoteka w sercu Szczytna. Oferujemy nowoczesne wnętrze, najlepszą muzykę i niezapomnianą atmosferę każdej nocy!</p>
+  <p>Godziny otwarcia: Czwartek – Niedziela: 22:00 – 06:00</p>
+</section>
+
+<section id="events" class="events">
+  <h2>Nadchodzące Wydarzenia</h2>
+  <p><strong>19 kwietnia:</strong> Występ DJ Maxel – noc pełna energii z najlepszymi hitami!</p>
+</section>
+
+<section id="gallery" class="gallery">
+  <h2>Galeria</h2>
+  <img src="https://tse2.mm.bing.net/th/id/OIP._Jk_dxlmq9h091NQ75kTSQHaFj" alt="Impreza 1">
+  <img src="https://tse1.mm.bing.net/th/id/OIP.AQ2UzUwtNFwnvwqDJMpHIgHaFR" alt="Impreza 2">
+</section>
+
+<section id="contact" class="contact">
+  <h2>Kontakt</h2>
+  <p>Adres: ul. Odrodzenia 40, 12-100 Szczytno</p>
+  <p>Telefon: <a href="tel:+48882517611" style="color: #ff007f;">+48 882 517 611</a></p>
+  <iframe src="https://maps.google.com/maps?q=Club%20XOXO%20Szczytno&t=&z=15&ie=UTF8&iwloc=&output=embed" width="100%" height="300" style="border:0;"></iframe>
+  <form>
+    <input type="text" placeholder="Twoje imię">
+    <input type="email" placeholder="Twój email">
+    <textarea placeholder="Wiadomość"></textarea>
+    <button type="submit">Wyślij</button>
+  </form>
+</section>
+
+<section id="reservations" class="reservations">
+  <h2>Rezerwacje</h2>
+  <form>
+    <input type="text" placeholder="Imię i nazwisko">
+    <input type="date">
+    <input type="time">
+    <input type="number" placeholder="Liczba osób">
+    <input type="tel" placeholder="Numer telefonu">
+    <textarea placeholder="Dodatkowe uwagi"></textarea>
+    <button type="submit">Zarezerwuj</button>
+  </form>
+</section>
+
+<footer>
+  <p>Club XOXO Szczytno &copy; 2025 | <a href="https://www.facebook.com/p/XOXO-Szczytno-61551909126727/" target="_blank" style="color:#ff007f;">Facebook</a> | <a href="https://www.instagram.com/explore/locations/144308308761449/xoxo-szczytno/" target="_blank" style="color:#ff007f;">Instagram</a></p>
+</footer>
+
+</body>
+</html>
